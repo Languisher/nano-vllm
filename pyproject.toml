@@ -17,6 +17,8 @@ dependencies = [
     "transformers>=4.51.0,<5.0.0",
     "flash-attn",
     "xxhash",
+    "accelerate>=1.12.0",
+    "loguru>=0.7.3",
 ]
 
 [project.urls]
@@ -24,7 +26,7 @@ Homepage="https://github.com/GeeeekExplorer/nano-vllm"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["nanovllm*"]
+include = ["nanovllm*", "lllm*"]
 
 [tool.uv.extra-build-dependencies]
 flash-attn = ["torch"]
